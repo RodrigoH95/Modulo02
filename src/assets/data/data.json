@@ -1,0 +1,10 @@
+{
+    "nombre": "Rodrigo Heredia",
+    "posicion": "Estudiante en UTN",
+    "ubicacion": "Buenos Aires, Argentina",
+    
+    "imagenBanner": "../assets/img/banner.jpg",
+    "imagenPerfil": "../assets/img/profile-picture.png",
+    "imagenLogo": "../assets/img/utn.jpg"
+    
+}

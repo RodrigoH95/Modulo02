@@ -1,14 +1,14 @@
-<div class="banner"><img src="../assets/img/banner.jpg" alt="Banner"></div>
+<div class="banner"><img [src]="miPortfolio.imagenBanner" alt="Banner"></div>
 
 <div class="grid-perfil">
     <div class="bio">
         <div class="profile-picture">
-            <img src="../assets/img/profile-picture.png" alt="Imagen de perfil">
+            <img [src]="miPortfolio.imagenPerfil" alt="Imagen de perfil">
         <a href="#"><i class="far fa-edit"></i></a>
         </div>
-        <h3>Rodrigo Heredia</h3>
-        <p>Estudiante en UTN</p>
-        <p>Buenos Aires, Argentina</p>
+        <h3>{{ miPortfolio.nombre }}</h3>
+        <p>{{ miPortfolio.posicion }}</p>
+        <p>{{ miPortfolio.ubicacion }}</p>
         <div class="bio-buttons">
             <button class="btn btn-primary">Tengo interés en</button>
             <button class="btn btn-secondary">Añadir sección</button>
@@ -16,6 +16,6 @@
         </div>
     </div>
     <div class="logo">
-        <img src="../assets/img/utn.jpg" alt="Logo (conicet)">
+        <img [src]="miPortfolio.imagenLogo" alt="Logo (conicet)">
     </div>
 </div>
