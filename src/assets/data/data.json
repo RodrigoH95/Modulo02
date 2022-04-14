@@ -1,10 +1,24 @@
 {
     "nombre": "Rodrigo Heredia",
-    "posicion": "Estudiante en UTN",
+    "posicion": "Desarrollador web full-stack",
     "ubicacion": "Buenos Aires, Argentina",
     
     "imagenBanner": "../assets/img/banner.jpg",
     "imagenPerfil": "../assets/img/profile-picture.png",
-    "imagenLogo": "../assets/img/utn.jpg"
-    
+    "imagenLogo": "../assets/img/utn.jpg",
+    "educacion": [{
+        "titulo": "Técnico en electromecánica",
+        "establecimiento": "Escuela de educación técnica N° 6",
+        "inicio": "2007",
+        "fin": "2013",
+        "imgSrc": "../assets/img/placeholder.png"
+    },
+    {
+        "titulo": "Ing. mecánico",
+        "establecimiento": "UTN - Facultad regional San Nicolás",
+        "inicio": "2014",
+        "fin": "en curso...",
+        "imgSrc": "../assets/img/placeholder.png"
+    }
+]
 }
