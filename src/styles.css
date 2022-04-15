@@ -150,6 +150,10 @@ section {
     margin: 0.4em 0;
 }
 
+.section-text {
+    grid-column: 1 / span 2;
+}
+
 .section-info p, .project-info{
     font-size: 0.85rem;
 }

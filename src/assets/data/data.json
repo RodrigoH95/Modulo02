@@ -6,19 +6,44 @@
     "imagenBanner": "../assets/img/banner.jpg",
     "imagenPerfil": "../assets/img/profile-picture.png",
     "imagenLogo": "../assets/img/utn.jpg",
-    "educacion": [{
-        "titulo": "Técnico en electromecánica",
-        "establecimiento": "Escuela de educación técnica N° 6",
-        "inicio": "2007",
-        "fin": "2013",
-        "imgSrc": "../assets/img/placeholder.png"
-    },
-    {
-        "titulo": "Ing. mecánico",
-        "establecimiento": "UTN - Facultad regional San Nicolás",
-        "inicio": "2014",
-        "fin": "en curso...",
-        "imgSrc": "../assets/img/placeholder.png"
-    }
-]
+    "descripcion": "Descripción del perfil",
+    "experiencia": [
+        {
+            "puesto": "Puesto",
+            "descripcion": "Tareas realizadas",
+            "inicio": "año inicio",
+            "fin": "año fin",
+            "imgSrc": "../assets/img/placeholder.png"
+        },
+        {
+            "puesto": "Puesto",
+            "descripcion": "Tareas realizadas",
+            "inicio": "año inicio",
+            "fin": "año fin",
+            "imgSrc": "../assets/img/placeholder.png"
+        }        
+    ],
+    "educacion": [
+        {
+            "titulo": "Técnico en electromecánica",
+            "establecimiento": "Escuela de educación técnica N° 6",
+            "inicio": "2007",
+            "fin": "2013",
+            "imgSrc": "../assets/img/placeholder.png"
+        },
+        {
+            "titulo": "Ing. mecánico",
+            "establecimiento": "UTN - Facultad regional San Nicolás",
+            "inicio": "2014",
+            "fin": "en curso...",
+            "imgSrc": "../assets/img/placeholder.png"
+        }
+    ],
+    "proyectos": [
+        {
+            "titulo": "Titulo proyecto",
+            "enlace": "http://www.google.com",
+            "descripcion": "descripcion del proyecto"
+        }
+    ]
 }

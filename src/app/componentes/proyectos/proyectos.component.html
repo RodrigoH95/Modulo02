@@ -1,19 +1,9 @@
 <section class="proyectos">
     <div class="section section-title"><h2>Proyectos</h2><a href="#"><i class="fas fa-plus"></i></a></div>
-    <div class="section section-projects">
+    <div *ngFor="let proyecto of miPortfolio.proyectos" class="section section-projects">
         <div class="project-info">
-            <a href="#"><h3 class="project-title">Proyecto 1</h3></a>
-            <p>Cuerpo: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at eaque aliquid tempore minus quis impedit eveniet atque velit consectetur dolores, voluptatum aut laudantium quos incidunt est repellendus. Architecto, maxime?</p>
-        </div>
-        <div class="section-icons">
-            <a href="#"><i class="far fa-edit"></i></a>
-            <a href="#"><i class="fas fa-trash"></i></a>
-        </div>
-    </div>
-    <div class="section section-projects">
-        <div class="project-info">
-            <a href="#"><h3 class="project-title">Proyecto 2</h3></a>
-            <p>Cuerpo: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at eaque aliquid tempore minus quis impedit eveniet atque velit consectetur dolores, voluptatum aut laudantium quos incidunt est repellendus. Architecto, maxime?</p>
+            <a [href]="proyecto.enlace"><h3 class="project-title">{{ proyecto.titulo }}</h3></a>
+            <p>{{ proyecto.descripcion }}</p>
         </div>
         <div class="section-icons">
             <a href="#"><i class="far fa-edit"></i></a>

@@ -1,12 +1,12 @@
 <section class="experiencia-y-educacion">
     <div *ngIf="miPortfolio.experiencia" class="experiencia">
         <div class="section section-title"><h2>Experiencia</h2><a href="#"><i class="fas fa-plus"></i></a></div>
-        <div class="section section-content">
-            <img src="../assets/../assets/img/placeholder.png" alt="imagen">
+        <div  *ngFor="let trabajo of miPortfolio.experiencia" class="section section-content">
+            <img [src]="trabajo.imgSrc" alt="imagen">
             <div class="section-info">
-                <h3 class="title">Puesto</h3>
-                <p class="description">Tareas realizadas</p>
-                <p class="period">Período de tiempo</p>
+                <h3 class="title">{{ trabajo.puesto }}</h3>
+                <p class="description">{{ trabajo.descripcion }}</p>
+                <p class="period">{{ trabajo.inicio }} - {{ trabajo.fin }}</p>
             </div>
             <div class="section-icons">
                 <a href="#"><i class="far fa-edit"></i></a>
@@ -17,12 +17,12 @@
 
     <div *ngIf="miPortfolio.educacion" class="educacion">
         <div class="section section-title"><h2>Educación</h2><a href="#"><i class="fas fa-plus"></i></a></div>
-        <div *ngFor="let elem of miPortfolio.educacion" class="section section-content">
-            <img [src]="elem.imgSrc" alt="imagen">
+        <div *ngFor="let educacion of miPortfolio.educacion" class="section section-content">
+            <img [src]="educacion.imgSrc" alt="imagen">
             <div class="section-info">
-                <h3 class="title">{{ elem.titulo}}</h3>
-                <p class="description">{{ elem.establecimiento }}</p>
-                <p class="period">{{ elem.inicio}} - {{ elem.fin }}</p>
+                <h3 class="title">{{ educacion.titulo}}</h3>
+                <p class="description">{{ educacion.establecimiento }}</p>
+                <p class="period">{{ educacion.inicio}} - {{ educacion.fin }}</p>
             </div>
             <div class="section-icons">
                 <a href="#"><i class="far fa-edit"></i></a>
